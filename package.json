@@ -1,0 +1,13 @@
+{
+  "name": "sos-vec",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace frontend\" \"npm run dev --workspace backend\"",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "dev:backend": "npm run dev --workspace backend",
+    "install:all": "npm install"
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}
